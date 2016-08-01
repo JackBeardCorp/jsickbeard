@@ -8,6 +8,7 @@
   "scripts": {
     "start": "set NODE_ENV=development && webpack-dev-server --inline --hot --port=3000 --history-api-fallback",
     "build": "NODE_ENV=production webpack --define process.env.NODE_ENV='\"production\"' -p ",
+    "lint": "eslint src/main/js && find ./src/main/js -iname \"*.scss\" -exec sass-lint -v -q {} +",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
