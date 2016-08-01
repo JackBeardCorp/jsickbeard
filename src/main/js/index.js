@@ -1,19 +1,22 @@
 import 'file?name=[name].[ext]!./index.html'
-// TODO : normalize.css
 
 import React from 'react'
-import { render } from 'react-dom'
+import {render} from 'react-dom'
 
-import App from './App'
+import App from './components/App'
 
 import store from './store'
-import { Provider } from 'react-redux'
+import {Provider} from 'react-redux'
 
-import './database'
-import { login } from './Login/actions'
+const DATAS = require('./stubs/tvshows.json')
 
 // Inits
-store.dispatch(login())
+store.dispatch({
+  type: 'SEARCH',
+  tvshows : DATAS,
+});
+
+
 
 render(
   <Provider store={store}>

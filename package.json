@@ -6,7 +6,7 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "NODE_ENV=test webpack-dev-server --inline --hot --port=3000 --history-api-fallback",
+    "start": "set NODE_ENV=development && webpack-dev-server --inline --hot --port=3000 --history-api-fallback",
     "build": "NODE_ENV=production webpack --define process.env.NODE_ENV='\"production\"' -p ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -52,7 +52,6 @@
     "webpack-dev-server": "~1.12.1"
   },
   "dependencies": {
-    "firebase": "^3.2.0",
     "normalize.css": "~3.0.3",
     "react": "15.2.0",
     "react-dom": "15.2.0",

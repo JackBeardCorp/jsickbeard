@@ -1,7 +1,7 @@
-import { combineReducers } from 'redux'
+import {combineReducers} from 'redux'
 
-// import { reducers as login } from './Login'
+import tvshows from './reducers/tvshows.reducer'
 
 export default combineReducers({
-//  login,
+  tvshows,
 })
