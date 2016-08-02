@@ -4,7 +4,7 @@ import Tvshow from '../Tvshow'
 const Component = ({ tvshows }) => {
   return (
     <div className="tvshows">
-      { tvshows.map(tvshow => <Tvshow { ...tvshow } />) }
+      { tvshows.map(tvshow => <Tvshow key={ tvshow.id } { ...tvshow } />) }
     </div>
   )
 }
