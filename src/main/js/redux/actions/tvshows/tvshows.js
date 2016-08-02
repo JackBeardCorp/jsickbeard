@@ -1,10 +1,8 @@
 export const SET_TVSHOWS = 'SET_TVSHOWS'
 
-const TVSHOWS = require('../../../stubs/tvshows.json')
-
-export const setTvshows = () => {
+export const setTvshows = (tvshows) => {
   return {
     type: SET_TVSHOWS,
-    tvshows: TVSHOWS,
+    tvshows: tvshows,
   }
 }
