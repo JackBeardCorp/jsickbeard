@@ -1,183 +1,183 @@
 export const tvshows = [
   {
     id: 1418,
-    name: "The Big Bang Theory",
+    name: 'The Big Bang Theory',
     countries: [
-      "US"
+      'US',
     ],
-    firstAired: "2007-09-24",
-    poster: "http://image.tmdb.org/t/p/w342/wQoosZYg9FqPrmI4zeCLRdEbqAB.jpg",
+    firstAired: '2007-09-24',
+    poster: 'http://image.tmdb.org/t/p/w342/wQoosZYg9FqPrmI4zeCLRdEbqAB.jpg',
     episodes: {},
     followed: false,
   },
   {
     id: 41727,
-    name: "Banshee",
+    name: 'Banshee',
     countries: [
-      "US"
+      'US',
     ],
-    firstAired: "2013-01-11",
-    poster: "http://image.tmdb.org/t/p/w342/fvocBFChMERoxWb7MMuTsUqWEis.jpg",
+    firstAired: '2013-01-11',
+    poster: 'http://image.tmdb.org/t/p/w342/fvocBFChMERoxWb7MMuTsUqWEis.jpg',
     episodes: {},
     followed: true,
   },
   {
     id: 40675,
-    name: "DCI Banks",
+    name: 'DCI Banks',
     countries: [
-      "GB"
+      'GB',
     ],
-    firstAired: "2010-09-27",
-    poster: "http://image.tmdb.org/t/p/w342/77pq0pNxN3voonu0dfYy5EJnMfx.jpg",
+    firstAired: '2010-09-27',
+    poster: 'http://image.tmdb.org/t/p/w342/77pq0pNxN3voonu0dfYy5EJnMfx.jpg',
     episodes: {},
     followed: false,
   },
   {
     id: 62130,
-    name: "Banished",
+    name: 'Banished',
     countries: [
-      "GB"
+      'GB',
     ],
-    firstAired: "2015-03-05",
-    poster: "http://image.tmdb.org/t/p/w342/kFTY0Rl10TPT0qNTgPjV8bORJ1m.jpg",
+    firstAired: '2015-03-05',
+    poster: 'http://image.tmdb.org/t/p/w342/kFTY0Rl10TPT0qNTgPjV8bORJ1m.jpg',
     episodes: {},
     followed: false,
   },
   {
     id: 61931,
-    name: "Banana",
+    name: 'Banana',
     countries: [
-      "GB"
+      'GB',
     ],
-    firstAired: "2015-01-22",
-    poster: "http://image.tmdb.org/t/p/w342/nf9qyCIS3VkvJoXT1a9IdkbtDrx.jpg",
+    firstAired: '2015-01-22',
+    poster: 'http://image.tmdb.org/t/p/w342/nf9qyCIS3VkvJoXT1a9IdkbtDrx.jpg',
     episodes: {},
     followed: false,
   },
   {
     id: 12342,
-    name: "Banzai",
+    name: 'Banzai',
     countries: [
-      "GB"
+      'GB',
     ],
-    firstAired: "2001-01-18",
-    poster: "http://image.tmdb.org/t/p/w342/1rq5VwXNDoyaoZwelnwql5H9tLK.jpg",
+    firstAired: '2001-01-18',
+    poster: 'http://image.tmdb.org/t/p/w342/1rq5VwXNDoyaoZwelnwql5H9tLK.jpg',
     episodes: {},
     followed: false,
   },
   {
     id: 1340,
-    name: "Banacek",
+    name: 'Banacek',
     countries: [
-      "US"
+      'US',
     ],
-    firstAired: "1972-09-13",
-    poster: "http://image.tmdb.org/t/p/w342/nFBIneZOuWNw7tOEKBQfEboRsQV.jpg",
+    firstAired: '1972-09-13',
+    poster: 'http://image.tmdb.org/t/p/w342/nFBIneZOuWNw7tOEKBQfEboRsQV.jpg',
     episodes: {},
     followed: false,
   },
   {
     id: 11479,
-    name: "Banyon",
+    name: 'Banyon',
     countries: [
-      "US"
+      'US',
     ],
-    firstAired: "1972-09-15",
+    firstAired: '1972-09-15',
     episodes: {},
     followed: false,
   },
   {
     id: 50550,
-    name: "Ban Lang Mek",
+    name: 'Ban Lang Mek',
     countries: [],
     episodes: {},
     followed: false,
   },
   {
     id: 24298,
-    name: "Bananasplit",
+    name: 'Bananasplit',
     countries: [
-      "NL"
+      'NL',
     ],
-    firstAired: "2009-02-08",
+    firstAired: '2009-02-08',
     episodes: {},
     followed: false,
   },
   {
     id: 59986,
-    name: "Glub Ban Rao Na...Ruk Ror Yoo",
+    name: 'Glub Ban Rao Na...Ruk Ror Yoo',
     countries: [
-      "TH"
+      'TH',
     ],
     episodes: {},
     followed: false,
   },
   {
     id: 46226,
-    name: "Evangelion Shin Gekijo-ban",
+    name: 'Evangelion Shin Gekijo-ban',
     countries: [],
     episodes: {},
     followed: false,
   },
   {
     id: 43780,
-    name: "Elf-ban Kakyūsei",
+    name: 'Elf-ban Kakyūsei',
     countries: [],
     episodes: {},
     followed: false,
   },
   {
     id: 56271,
-    name: "Krabeu Ban",
+    name: 'Krabeu Ban',
     countries: [],
     episodes: {},
     followed: false,
   },
   {
     id: 57902,
-    name: "Meuh Dok Rak Ban",
+    name: 'Meuh Dok Rak Ban',
     countries: [
-      "TH"
+      'TH',
     ],
     episodes: {},
     followed: false,
   },
   {
     id: 9127,
-    name: "Ban This Filth",
+    name: 'Ban This Filth',
     countries: [
-      "GB"
+      'GB',
     ],
-    poster: "http://image.tmdb.org/t/p/w342/yaRkADW8K0Y8tJvhft78KW9vZfc.jpg",
+    poster: 'http://image.tmdb.org/t/p/w342/yaRkADW8K0Y8tJvhft78KW9vZfc.jpg',
     episodes: {},
     followed: false,
   },
   {
     id: 57354,
-    name: "Ban Di Chuc Bi An",
+    name: 'Ban Di Chuc Bi An',
     countries: [],
     episodes: {},
     followed: false,
   },
   {
     id: 16691,
-    name: "X-Rated: The Pop Videos They Tried to Ban",
+    name: 'X-Rated: The Pop Videos They Tried to Ban',
     countries: [],
     episodes: {},
     followed: false,
   },
   {
     id: 19224,
-    name: "X-Rated: The TV They Tried to Ban",
+    name: 'X-Rated: The TV They Tried to Ban',
     countries: [],
     episodes: {},
     followed: false,
   },
   {
     id: 53849,
-    name: "Imra'ah fi Shaqil Ti'ban",
+    name: 'Imra ah fi Shaqil Tiban',
     countries: [],
     episodes: {},
     followed: false,
-  }
+  },
 ]
