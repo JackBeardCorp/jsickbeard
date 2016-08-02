@@ -1,15 +1,17 @@
 import React, { PropTypes } from 'react'
 
-const Component = ({ tvshow }) => {
+const Component = ({ id, name }) => {
   return (
     <div className="tvshow">
-      <h1>{ tvshow.name }</h1>
+      <h1>{ id }</h1>
+      <p>{ name }</p>
     </div>
   )
 }
 
 Component.propTypes = {
-  tvshow: PropTypes.object,
+  id: PropTypes.string,
+  name: PropTypes.string,
 }
 
 export default Component
