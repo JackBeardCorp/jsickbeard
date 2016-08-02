@@ -6,7 +6,7 @@ import { SET_TVSHOWS } from '../../actions'
 export default (state = initState, action = initAction) => {
   switch (action.type) {
     case SET_TVSHOWS:
-      return [...state, action.tvshows]
+      return action.tvshows
     default:
       return state
   }

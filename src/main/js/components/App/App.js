@@ -1,16 +1,12 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import Tvshows from '../Tvshows'
 
-const Component = ({ tvshows }) => {
+const Component = () => {
   return (
     <div className="app">
-      <Tvshows {...tvshows} />
+      <Tvshows />
     </div>
   )
-}
-
-Component.propTypes = {
-  tvshows: PropTypes.array,
 }
 
 export default Component

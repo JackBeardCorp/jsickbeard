@@ -10,10 +10,10 @@ import { Provider } from 'react-redux'
 
 import { setTvshows } from 'redux/actions'
 
-const TVSHOWS = require('./stubs/tvshows.json')
+import { tvshows } from './stubs/tvshows'
 
 // Inits
-store.dispatch(setTvshows(TVSHOWS))
+store.dispatch(setTvshows(tvshows))
 
 render(
   <Provider store={store}>
