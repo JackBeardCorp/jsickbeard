@@ -1,11 +1,11 @@
 import React from 'react'
 import Tvshows from '../Tvshows'
-import Filter from '../Filter'
+import Search from '../Search'
 
 const Component = () => {
   return (
     <div className="app">
-      <Filter />
+      <Search />
       <Tvshows />
     </div>
   )
