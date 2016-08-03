@@ -5,7 +5,7 @@ import reducers from './reducers'
 
 const store = createStore(
   reducers,
-    compose(
+  compose(
     applyMiddleware(thunkMiddleware),
     window.devToolsExtension ? window.devToolsExtension() : f => f
   )
