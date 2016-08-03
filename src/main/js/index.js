@@ -8,13 +8,11 @@ import App from './components/App'
 import store from './redux/store'
 import { Provider } from 'react-redux'
 
-import { setTvshows, setSearch, searchTvshows } from 'redux/actions'
+import { setSearch, searchTvshows } from 'redux/actions'
 
-import { tvshows } from './stubs/tvshows'
-store.dispatch(setTvshows(tvshows))
-store.dispatch(searchTvshows('banshee'))
-
+// import { tvshows } from './stubs/tvshows'
 // Inits
+store.dispatch(searchTvshows('banshee'))
 store.dispatch(setSearch(''))
 
 render(
