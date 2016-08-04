@@ -1,4 +1,4 @@
-export const initState = {}
+export const initState = ''
 export const initAction = { type: 'INIT_ACTION' }
 
 import { SET_SEARCH } from '../../actions'

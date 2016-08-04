@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 
 const Component = ({ search }) => {
   return (
-    <div className="search">
+    <div>
       <input onChange={ search } />
     </div>
   )

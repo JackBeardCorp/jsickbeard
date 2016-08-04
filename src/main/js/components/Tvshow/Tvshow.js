@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 
 const Component = ({ id, name }) => {
   return (
-    <div className="tvshow">
+    <div>
       <h1>{ id }</h1>
       <p>{ name }</p>
     </div>

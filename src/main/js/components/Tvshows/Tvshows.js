@@ -3,7 +3,7 @@ import Tvshow from '../Tvshow'
 
 const Component = ({ tvshows }) => {
   return (
-    <div className="tvshows">
+    <div>
       { tvshows.map(tvshow => <Tvshow key={ tvshow.id } { ...tvshow } />) }
     </div>
   )

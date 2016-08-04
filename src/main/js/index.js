@@ -1,4 +1,5 @@
 import 'file?name=[name].[ext]!./index.html'
+import 'normalize.css'
 
 import React from 'react'
 import { render } from 'react-dom'
