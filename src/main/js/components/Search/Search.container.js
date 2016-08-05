@@ -1,15 +1,12 @@
 import { connect } from 'react-redux'
-import { setSearch } from '../../redux/actions'
+import { clearTvshows, fetchTvshows } from '../../redux/actions'
 import Component from './Search'
 
-const mapStateToProps = ({ search }) => {
-  return { search }
-}
+const mapStateToProps = ({ search }) => ({ search })
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    search: (e) => dispatch(setSearch(e.target.value)),
-  }
-}
+const mapDispatchToProps = (dispatch) => ({
+  search: ({ target: { value } }) =>
+    value !== '' ? dispatch(fetchTvshows(value)) : dispatch(clearTvshows()),
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Component)

@@ -1,10 +1,8 @@
 import { connect } from 'react-redux'
 
 import Component from './Tvshows'
-import { searchTvshows } from './Tvshows.selector'
+import { selectTvshows } from './Tvshows.selector'
 
-const mapStateToProps = (state) => {
-  return { tvshows: searchTvshows(state) }
-}
+const mapStateToProps = (state) => ({ tvshows: selectTvshows(state) })
 
 export default connect(mapStateToProps)(Component)

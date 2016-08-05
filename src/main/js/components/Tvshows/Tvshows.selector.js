@@ -1,16 +1,9 @@
 import { createSelector } from 'reselect'
 
-const getSearch = (state) => state.search
-const getTvshows = (state) => state.tvshows
+const getSearch = ({ search }) => search
+const getTvshows = ({ tvshows }) => tvshows
 
-export const searchTvshows = createSelector(
+export const selectTvshows = createSelector(
   [getSearch, getTvshows],
-  (search, tvshows) => {
-    fetch('http://37.187.19.83/jackbeard/tvshows?name=banshee&lang=fr',
-      { headers: { Authorization: 'Basic YWRtaW46STRtSmFjaw==' } })
-      .then((r) => r.json())
-      .then((data) => {
-        return data.filter((tvshow) => tvshow.name.includes(search))
-      })
-  }
+  (search, tvshows) => tvshows
 )
