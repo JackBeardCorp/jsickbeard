@@ -5,8 +5,13 @@ import Component from './Search'
 const mapStateToProps = ({ search }) => ({ search })
 
 const mapDispatchToProps = (dispatch) => ({
-  search: ({ target: { value } }) =>
-    value !== '' ? dispatch(fetchTvshows(value)) : dispatch(clearTvshows()),
+  search: ({ target: { value } }) => {
+    if (value !== '') {
+      dispatch(fetchTvshows(value))
+    } else {
+      dispatch(clearTvshows())
+    }
+  },
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Component)

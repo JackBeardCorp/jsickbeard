@@ -1,7 +1,7 @@
+import { SET_TVSHOWS, CLEAR_TVSHOWS } from '../../actions'
+
 export const initState = []
 export const initAction = { type: 'INIT_ACTION' }
-
-import { SET_TVSHOWS, CLEAR_TVSHOWS } from '../../actions'
 
 export default (state = initState, action = initAction) => {
   switch (action.type) {

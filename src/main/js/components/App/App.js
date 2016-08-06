@@ -3,7 +3,7 @@ import Tvshows from '../Tvshows'
 import Search from '../Search'
 
 const Component = () => (
-  <div className="app">
+  <div>
     <Search />
     <Tvshows />
   </div>

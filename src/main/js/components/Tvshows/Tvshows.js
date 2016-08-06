@@ -3,12 +3,12 @@ import Tvshow from '../Tvshow'
 
 const Component = ({ tvshows }) => (
   <div>
-    { tvshows.map(tvshow => <Tvshow key={ tvshow.id } { ...tvshow } />) }
+    {tvshows.map(tvshow => <Tvshow key={tvshow.id} {...tvshow} />)}
   </div>
 )
 
 Component.propTypes = {
-  tvshows: PropTypes.array,
+  tvshows: PropTypes.array.isRequired,
 }
 
 export default Component
