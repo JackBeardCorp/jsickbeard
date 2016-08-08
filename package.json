@@ -36,9 +36,11 @@
     "babel-register": "~6.7.2",
     "chai": "~3.5.0",
     "css-loader": "^0.23.1",
-    "eslint": "~2.7.0",
-    "eslint-config-airbnb": "~6.1.0",
-    "eslint-plugin-react": "~4.2.3",
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb": "^10.0.0",
+    "eslint-plugin-import": "^1.12.0",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^6.0.0",
     "expect": "~1.16.0",
     "file-loader": "~0.8.5",
     "isomorphic-style-loader": "^1.0.0",
@@ -53,7 +55,7 @@
     "webpack-dev-server": "~1.12.1"
   },
   "dependencies": {
-    "normalize.css": "~3.0.3",
+    "normalize.css": "~4.2.0",
     "react": "15.2.0",
     "react-dom": "15.2.0",
     "react-redux": "4.4.1",
@@ -61,6 +63,6 @@
     "redux": "~3.3.1",
     "redux-logger": "~2.6.1",
     "redux-thunk": "~2.0.1",
-    "reselect" : "~2.5.2"
+    "reselect": "~2.5.2"
   }
 }
