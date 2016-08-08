@@ -42,14 +42,13 @@ module.exports = {
     publicPath: '/',
   },
   resolve: {
-    root: [
-      path.resolve('./src/main/js'),
-    ],
+    root: [path.resolve('./src/main/js')],
+    extensions: ['', '.js', '.jsx'],
   },
   plugins: getPlugins([]),
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /\.jsx?$/,
       loaders: getLoaders([]),
       include: path.join(__dirname, 'src/main/js'),
     }, {
