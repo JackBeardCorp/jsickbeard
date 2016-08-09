@@ -34,11 +34,9 @@ export const lazyFetchTvshows = () => (dispatch, getState) => {
   const time = (new Date().getTime())
   const typeTimer = (timestamps.SET_SEARCH + 200) - time
   const fetchTimer = (timestamps.FETCH_TVSHOWS + 1000) - time
-  if (typeTimer <= 0) {
-    // Research if user didn't write for 0.5s
-    dispatch(fetchTvshows(search))
-  } else if (fetchTimer <= 0) {
-    // Research if the last search was 1s ago
+
+  // Research if user didn't write for 0.5s or last search was 1s ago
+  if (typeTimer <= 0 || fetchTimer <= 0) {
     dispatch(fetchTvshows(search))
   }
 
