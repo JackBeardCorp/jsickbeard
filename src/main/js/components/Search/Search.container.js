@@ -5,7 +5,7 @@ import Component from './Search'
 const mapStateToProps = ({ search }) => ({ search })
 
 const mapDispatchToProps = (dispatch) => ({
-  search: ({ target: { value } }) => {
+  search: (value) => {
     if (value !== '') {
       dispatch(fetchTvshows(value))
     } else {
