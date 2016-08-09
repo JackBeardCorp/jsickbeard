@@ -1,20 +1,14 @@
-import 'file?name=[name].[ext]!./index.html'
-
 import React from 'react'
 import { render } from 'react-dom'
-
-import App from './components/App'
-
-import store from './redux/store'
 import { Provider } from 'react-redux'
 
-import { setTvshows, setSearch } from 'redux/actions'
+/* eslint import/no-extraneous-dependencies: 0 import/no-unresolved: 0 */
+import 'file?name=[name].[ext]!./index.html'
 
-import { tvshows } from './stubs/tvshows'
+import App from './components/App'
+import store from './redux/store'
 
-// Inits
-store.dispatch(setTvshows(tvshows))
-store.dispatch(setSearch(''))
+/* eslint-env browser */
 
 render(
   <Provider store={store}>
