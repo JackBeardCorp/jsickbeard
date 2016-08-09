@@ -12,3 +12,4 @@ export default combineReducers({
 
 export * from './search'
 export * from './timestamps'
+export * from './tvshows'
