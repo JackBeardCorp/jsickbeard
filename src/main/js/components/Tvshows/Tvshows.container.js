@@ -2,8 +2,6 @@ import { connect } from 'react-redux'
 
 import Component from './Tvshows'
 
-const mapStateToProps = ({ tvshows, search }) => {
-  return { tvshows: tvshows.filter((tvshow) => tvshow.name.includes(search)) }
-}
+const mapStateToProps = ({ tvshows }) => ({ tvshows })
 
 export default connect(mapStateToProps)(Component)

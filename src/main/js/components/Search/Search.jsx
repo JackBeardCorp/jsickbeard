@@ -3,7 +3,7 @@ import Input from 'react-toolbox/lib/input'
 
 const Component = ({ search }) => {
   return (
-    <div className="search">
+    <div>
       <Input type="text" label="Recherche" icon="search" onChange={ search } />
     </div>
   )
