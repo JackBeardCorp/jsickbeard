@@ -3,8 +3,8 @@ import { createSelector } from 'reselect'
 import deburr from 'lodash/deburr'
 import lowerCase from 'lodash/lowerCase'
 
-import Component from './Tvshows'
 import { getSearch, getTvshows } from 'redux/reducers'
+import Component from './Tvshows'
 
 const deburredSearch = createSelector([getSearch], (search) => lowerCase(deburr(search)))
 const deburredTvshows = createSelector([getTvshows], (tvshows) =>
