@@ -1,3 +1,3 @@
 export const SET_SEARCH = 'SET_SEARCH'
 
-export const setSearch = (search) => ({ type: SET_SEARCH, search })
+export const setSearch = (search) => ({ type: SET_SEARCH, search, timestamp: new Date().getTime() })

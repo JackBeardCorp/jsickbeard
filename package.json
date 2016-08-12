@@ -1,6 +1,6 @@
 {
   "name": "jsickbeard",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "directories": {
     "doc": "doc"
@@ -55,6 +55,7 @@
     "webpack-dev-server": "~1.12.1"
   },
   "dependencies": {
+    "lodash": "^4.14.2",
     "normalize.css": "~4.2.0",
     "react": "15.2.0",
     "react-dom": "15.2.0",
