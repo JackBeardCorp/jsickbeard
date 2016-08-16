@@ -6,7 +6,7 @@ import lowerCase from 'lodash/lowerCase'
 import { getSearch, getTvshows } from 'redux/reducers'
 import Component from './Tvshows'
 
-const deburredSearch = createSelector([getSearch], (search) => lowerCase(deburr(search)))
+const deburredSearch = createSelector([getSearch], ({ text }) => lowerCase(deburr(text)))
 const deburredTvshows = createSelector([getTvshows], (tvshows) =>
   tvshows.map(raw => ({
     raw,
@@ -16,9 +16,9 @@ const deburredTvshows = createSelector([getTvshows], (tvshows) =>
 
 const getFilteredTvShows = createSelector(
   [deburredSearch, deburredTvshows],
-  (search, tvshows) =>
+  (text, tvshows) =>
     tvshows
-      .filter(show => show.plain.includes(search))
+      .filter(show => show.plain.includes(text))
       .map(show => show.raw)
 )
 

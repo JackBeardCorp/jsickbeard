@@ -3,10 +3,12 @@ import { connect } from 'react-redux'
 import { clearTvshows, lazyFetchTvshows, setSearch } from '../../redux/actions'
 import Component from './Search'
 
+const mapStateToProps = ({ search: { inProgress } }) => ({ inProgress })
+
 const mapDispatchToProps = (dispatch) => ({
   search: ({ target: { value } }) => {
     // Update search
-    dispatch(setSearch(value))
+    dispatch(setSearch(value, true))
 
     // Fetch
     if (value !== '') {
@@ -17,4 +19,4 @@ const mapDispatchToProps = (dispatch) => ({
   },
 })
 
-export default connect(undefined, mapDispatchToProps)(Component)
+export default connect(mapStateToProps, mapDispatchToProps)(Component)

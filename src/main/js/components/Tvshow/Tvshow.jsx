@@ -3,7 +3,7 @@ import { Card, CardTitle } from 'react-toolbox/lib/card'
 
 const Component = ({ id, name }) => (
   <Card style={{ width: '350px' }}>
-    <CardTitle title={ name } subtitle={ id } />
+    <CardTitle id={id} title={name} />
   </Card>
 )
 

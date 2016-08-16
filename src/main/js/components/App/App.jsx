@@ -1,15 +1,19 @@
 import React from 'react'
-import AppBar from 'react-toolbox/lib/app_bar'
+import { Layout, Panel, AppBar } from 'react-toolbox'
 import Tvshows from '../Tvshows'
 import Search from '../Search'
 
 const Component = () => {
   return (
-    <div className="app">
-      <AppBar fixed >
+    <div>
+      <AppBar fixed>
         <Search />
       </AppBar>
-      <Tvshows />
+      <Layout>
+        <Panel>
+          <Tvshows />
+        </Panel>
+      </Layout>
     </div>
   )
 }
