@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react'
+import { Card, CardTitle } from 'react-toolbox/lib/card'
 
 const Component = ({ id, name }) => (
-  <div>
-    <h1>{id}</h1>
-    <p>{name}</p>
-  </div>
+  <Card style={{ width: '350px' }}>
+    <CardTitle id={id} title={name} />
+  </Card>
 )
 
 Component.propTypes = {

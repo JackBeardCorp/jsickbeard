@@ -1,20 +1,28 @@
 /* eslint-env browser */
 import { getSearch, getTimestamps } from '../../reducers'
 
+import { setSearch } from '../../actions'
+
 export const SET_TVSHOWS = 'SET_TVSHOWS'
 export const setTvshows = (tvshows) => ({ type: SET_TVSHOWS, tvshows })
 
 export const CLEAR_TVSHOWS = 'CLEAR_TVSHOWS'
-export const clearTvshows = () => ({ type: CLEAR_TVSHOWS })
+export const clearTvshows = () => dispatch => {
+  dispatch({ type: CLEAR_TVSHOWS })
+  // Stop circular progress on search box.
+  dispatch(setSearch('', false))
+}
 
 export const FETCH_TVSHOWS = 'FETCH_TVSHOWS'
-export const fetchTvshows = (search) => dispatch => {
+export const fetchTvshows = ({ text }) => dispatch => {
   dispatch({ type: FETCH_TVSHOWS, timestamp: (new Date().getTime()) })
 
-  fetch(`http://37.187.19.83/jackbeard/tvshows?name=${search}&lang=fr`,
+  fetch(`http://37.187.19.83/jackbeard/tvshows?name=${text}&lang=fr`,
     { headers: { Authorization: 'Basic YWRtaW46STRtSmFjaw==' } })
     .then(r => r.json())
     .then(tvshows => dispatch(setTvshows(tvshows)))
+    // Stop circular progress on search box.
+    .then(() => dispatch(setSearch(text, false)))
 }
 
 let timeout

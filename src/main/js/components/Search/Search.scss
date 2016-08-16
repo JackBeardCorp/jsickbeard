@@ -1,0 +1,23 @@
+.searchBox {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: solid 1px red;
+  padding: 10px 5px;
+}
+
+
+
+.searchBox input {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border: none;
+  outline: none;
+  background-color: #303f9f;
+  color: white;
+  font-size: initial;
+  margin-left: 1em;
+}
+
+.searchBox ::-webkit-input-placeholder {
+  color: white;
+}

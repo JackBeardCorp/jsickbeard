@@ -58,6 +58,9 @@ module.exports = {
         'css?modules&localIdentName=[path]_[local]__[hash:base64:5]',
         'sass',
       ],
+      sassLoader: {
+        data: '@import "' + path.resolve(__dirname, 'theme/_theme.scss') + '";'
+      }
     }],
   },
 }
