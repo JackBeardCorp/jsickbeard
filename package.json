@@ -6,7 +6,7 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "set NODE_ENV=development && webpack-dev-server --inline --hot --port=3000 --history-api-fallback",
+    "start": "set NODE_ENV=development && webpack-dev-server --host 127.0.0.1 --inline --hot --port=3000 --history-api-fallback --watch-poll --colors",
     "build": "NODE_ENV=production webpack --define process.env.NODE_ENV='\"production\"' -p ",
     "lint": "eslint src/main/js && find ./src/main/js -iname \"*.scss\" -exec sass-lint -v -q {} +",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -51,8 +51,8 @@
     "sass-loader": "^3.2.0",
     "sinon": "~1.17.3",
     "style-loader": "~0.13.1",
-    "webpack": "~1.12.2",
-    "webpack-dev-server": "~1.12.1"
+    "webpack": "~2.1.0-beta",
+    "webpack-dev-server": "^2.1.0-beta"
   },
   "dependencies": {
     "lodash": "^4.14.2",

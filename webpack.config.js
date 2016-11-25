@@ -14,9 +14,9 @@ function getEntrySources(sources) {
 
 function getLoaders(loaders) {
   if (dev) {
-    loaders.push('react-hot')
+    loaders.push('react-hot-loader')
   }
-  loaders.push('babel')
+  loaders.push('babel-loader')
 
   return loaders
 }
@@ -30,6 +30,25 @@ function getPlugins(plugins) {
 }
 
 module.exports = {
+  devServer: {
+    quiet: false,
+    stats: { colors: true },
+    headers: {
+      Authorization: 'Basic YWRtaW46STRtSmFjaw==',
+    },
+    proxy: {
+      '/jackbeard': {
+        'target': {
+          'host': '37.187.19.83',
+          'protocol': 'http:',
+          'port': 80
+        },
+        ignorePath: true,
+        changeOrigin: true,
+        secure: false
+      }
+    }
+  },
   devtool: dev ? 'eval' : '',
   entry: {
     jsickbeard: getEntrySources([
@@ -42,8 +61,8 @@ module.exports = {
     publicPath: '/',
   },
   resolve: {
-    root: [path.resolve('./src/main/js')],
-    extensions: ['', '.js', '.jsx'],
+    modules: [path.resolve(__dirname, "src/main/js"), "node_modules"],
+    extensions: ['.js', '.jsx'],
   },
   plugins: getPlugins([]),
   module: {
