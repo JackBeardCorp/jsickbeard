@@ -33,17 +33,13 @@ module.exports = {
   devServer: {
     quiet: false,
     stats: { colors: true },
-    headers: {
-      Authorization: 'Basic YWRtaW46STRtSmFjaw==',
-    },
     proxy: {
-      '/jackbeard': {
+      '/jackbeard/*': {
         'target': {
           'host': '37.187.19.83',
           'protocol': 'http:',
           'port': 80
         },
-        ignorePath: true,
         changeOrigin: true,
         secure: false
       }
